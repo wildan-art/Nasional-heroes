@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<title>Nusantara Kids Health Heroes</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Media pembelajaran P3K interaktif untuk siswa SD/MI, SMP/MTs, dan SMA/MA bersama maskot Nusa dan Tara. Universitas Muhammadiyah Lamongan.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com/3.4.17"></script>
+<script>
+if (window.tailwind) tailwind.config = { theme: { extend: {
+  colors: { mint:'var(--mint)', leaf:'var(--leaf)', leafd:'var(--leaf-deep)', sky:'var(--sky)', skyd:'var(--sky-deep)', skys:'var(--sky-soft)', sun:'var(--sun)', suns:'var(--sun-soft)', ink:'var(--ink)', inks:'var(--ink-soft)', berry:'var(--berry)' },
+  fontFamily: { display:['Fredoka','Trebuchet MS','sans-serif'], body:['Nunito','Segoe UI','sans-serif'] }
+} } };
+</script>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+<header class="site-header">
+  <div class="gutter">
+    <div class="inner flex items-center justify-between gap-3 py-2">
+      <a href="#beranda" class="flex items-center gap-3 min-w-0" aria-label="Nusantara Kids Health Heroes, ke Beranda">
+        <svg width="52" height="52" viewBox="0 0 52 52" aria-hidden="true" class="flex-none">
+          <path d="M26 3 L46 10 V25 C46 38 37 46 26 50 C15 46 6 38 6 25 V10Z" fill="#2FBF71" stroke="#16324A" stroke-width="3" stroke-linejoin="round"/>
+          <path d="M10 16 L2 30 L12 26Z M42 16 L50 30 L40 26Z" fill="#FFC933" stroke="#16324A" stroke-width="2.5" stroke-linejoin="round"/>
+          <path d="M22 15 H30 V22 H37 V30 H30 V37 H22 V30 H15 V22 H22Z" fill="#fff" stroke="#16324A" stroke-width="2.5" stroke-linejoin="round"/>
+        </svg>
+        <span class="disp leading-none min-w-0">
+          <span class="block text-[1.15rem] sm:text-[1.35rem] font-bold">Nusantara Kids</span>
+          <span class="block text-[.95rem] sm:text-[1.05rem] font-semibold text-leafd">Health Heroes</span>
+        </span>
+      </a>
+      <nav aria-label="Menu utama" class="hidden lg:flex items-center gap-1" id="navDesk">
+        <a class="nav-link" href="#beranda">Beranda</a>
+        <a class="nav-link" href="#kategori-materi">Kategori P3K</a>
+        <a class="nav-link" href="#quiz">Quiz Pahlawan</a>
+        <a class="nav-link" href="#tentang">Tentang Kami</a>
+      </nav>
+      <button id="burger" class="lg:hidden ctrl" aria-label="Buka menu" aria-expanded="false" aria-controls="navMob">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#16324A" stroke-width="3" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+    <nav id="navMob" aria-label="Menu seluler" class="lg:hidden pb-3 grid gap-1" hidden>
+      <a class="nav-link" href="#beranda">Beranda</a>
+      <a class="nav-link" href="#kategori-materi">Kategori P3K</a>
+      <a class="nav-link" href="#quiz">Quiz Pahlawan</a>
+      <a class="nav-link" href="#tentang">Tentang Kami</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section id="beranda" class="hero">
+  <div class="blob" style="width:26rem;height:26rem;background:#fff;opacity:.55;right:-8rem;top:-9rem"></div>
+  <div class="blob" style="width:14rem;height:14rem;background:var(--sun);opacity:.35;left:-5rem;bottom:-5rem"></div>
+  <div class="gutter relative">
+    <div class="inner grid md:grid-cols-2 gap-8 items-center py-12 md:py-16">
+      <div class="min-w-0">
+        <span class="pill"><span aria-hidden="true" style="color:var(--leaf-deep)">✚</span> Media belajar P3K untuk siswa SD/MI, SMP/MTs, SMA/MA</span>
+        <p class="mt-3"><span class="pill" style="background:var(--sun)">Universitas Muhammadiyah Lamongan</span></p>
+        <h1 class="mt-4 font-bold" style="font-size:clamp(2.3rem,6.4vw,4.1rem)">Menjadi Pahlawan Kesehatan Sekolah!</h1>
+        <p class="mt-4 text-lg md:text-xl text-inks max-w-xl font-semibold">Belajar Pertolongan Pertama (P3K) bersama Maskot Hero Nusantara!</p>
+        <div class="mt-7 flex flex-wrap gap-4">
+          <a href="#apa-itu-p3k" class="btn btn-sun btn-cta">Mulai Belajar P3K ➔</a>
+          <a href="#quiz" class="btn btn-ghost">Coba Quiz</a>
+        </div>
+        <div class="mt-8 bg-white border-[3px] border-ink rounded-3xl p-4 max-w-xl" style="box-shadow:0 5px 0 var(--ink)">
+          <p class="text-sm font-extrabold text-skyd">Disusun dan dikembangkan oleh</p>
+          <ul class="mt-2 grid gap-2 list-none p-0">
+            <li class="leading-snug"><strong>Wildan Nur Fahmi Al-Mujahid</strong><br><span class="text-inks text-[.95rem]">NIM: 2502014227</span></li>
+            <li class="leading-snug"><strong>Mayda Indrian Nabilla Putri Sofian</strong><br><span class="text-inks text-[.95rem]">NIM: 2604010714</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="min-w-0 flex justify-center">
+        <div id="heroArt" class="w-full max-w-[30rem]" role="img" aria-label="Nusa dan Tara, dua pahlawan kesehatan cilik berjubah, melambaikan tangan"></div>
+      </div>
+    </div>
+
+    <div class="inner pb-8 md:pb-10">
+    <div id="karakter">
+      <h2 class="font-bold" style="font-size:clamp(2rem,5vw,3rem)">Kenali Karakter Nusantara Kids</h2>
+      <p class="mt-2 text-inks font-semibold max-w-2xl">Nusa dan Tara akan menemanimu belajar P3K di setiap kartu peragaan.</p>
+      <div class="mt-6 grid md:grid-cols-2 gap-6">
+        <article class="charcard">
+          <div class="charfig" style="background:var(--sky-soft)" data-full="nusa" role="img" aria-label="Nusa, pahlawan cilik berjubah kuning, melambaikan tangan"></div>
+          <div class="min-w-0"><span class="chip" style="background:var(--sun-soft)">Pahlawan jubah kuning</span><h3 class="text-3xl font-bold mt-1">Nusa</h3><p class="mt-1 text-inks leading-snug font-semibold">Pahlawan cilik berjubah kuning. Tenang, sabar, dan selalu siap menolong teman.</p></div>
+        </article>
+        <article class="charcard">
+          <div class="charfig" style="background:#CFF5DD" data-full="tara" role="img" aria-label="Tara, pahlawan cilik berjubah hijau, melambaikan tangan"></div>
+          <div class="min-w-0"><span class="chip" style="background:#CFF5DD">Pahlawan jubah hijau</span><h3 class="text-3xl font-bold mt-1">Tara</h3><p class="mt-1 text-inks leading-snug font-semibold">Pahlawan cilik berjubah hijau. Gesit, berani, dan pandai menjelaskan langkah P3K.</p></div>
+        </article>
+      </div>
+    </div>
+    </div>
+
+    <div class="inner pb-8 md:pb-10">
+      <a href="#apa-itu-p3k" class="scrollcue" id="scrollCue" aria-label="Gulir ke bawah untuk mulai belajar P3K, menuju bagian Apa itu P3K">
+        <span class="scrollcue-text"><span aria-hidden="true">👉</span> Gulir / Geser ke bawah untuk mulai belajar P3K</span>
+        <span class="scrollcue-arrow" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#16324A" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v13M6 12l6 6 6-6"/></svg>
+        </span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section id="apa-itu-p3k" class="sec" style="padding-bottom:1rem" aria-labelledby="p3kTitle">
+  <div class="gutter"><div class="inner">
+    <span class="pill" style="background:var(--sun)">Mengenal Pertolongan Pertama Bersama Pahlawan Kesehatan</span>
+    <h2 id="p3kTitle" class="mt-3 font-bold" style="font-size:clamp(2rem,5vw,3rem)">Apa itu P3K?</h2>
+    <div class="p3k-grid mt-6">
+      <div class="p3k-art" role="img" aria-label="Kotak P3K hijau dengan tanda tambah putih">
+        <svg class="kitsvg" viewBox="0 0 200 176" xmlns="http://www.w3.org/2000/svg">
+          <ellipse cx="100" cy="162" rx="64" ry="8" fill="#000" opacity=".12"/>
+          <g>
+            <rect x="70" y="14" width="60" height="34" rx="13" fill="none" stroke="#16324A" stroke-width="6"/>
+            <rect x="28" y="36" width="144" height="110" rx="22" fill="#2FBF71" stroke="#16324A" stroke-width="5"/>
+            <rect x="38" y="44" width="124" height="14" rx="7" fill="#6FD98F" opacity=".7"/>
+            <path d="M86 62H114V77H129V105H114V120H86V105H71V77H86Z" fill="#fff" stroke="#16324A" stroke-width="4" stroke-linejoin="round"/>
+            <rect x="40" y="126" width="26" height="9" rx="4.5" fill="#FFC933" stroke="#16324A" stroke-width="2.4"/>
+            <animateTransform attributeName="transform" type="translate" values="0 0;0 -7;0 0" dur="2.6s" repeatCount="indefinite"/>
+          </g>
+          <g transform="translate(168 36)" opacity="0"><path d="M0 -9L2.6 -2.6L9 0L2.6 2.6L0 9L-2.6 2.6L-9 0L-2.6 -2.6Z" fill="#FFC933" stroke="#16324A" stroke-width="2" stroke-linejoin="round"/><animate attributeName="opacity" values="0;1;0" dur="1.8s" repeatCount="indefinite"/></g>
+          <g transform="translate(26 70)" opacity="0"><path d="M0 -7L2 -2L7 0L2 2L0 7L-2 2L-7 0L-2 -2Z" fill="#35A9F2" stroke="#16324A" stroke-width="2" stroke-linejoin="round"/><animate attributeName="opacity" values="0;1;0" dur="1.8s" begin=".9s" repeatCount="indefinite"/></g>
+        </svg>
+      </div>
+      <div class="p3k-text">
+        <p>Pertolongan Pertama Pada Kecelakaan (P3K) adalah tindakan cepat dan tepat yang bisa kita lakukan saat ada teman, keluarga, atau diri sendiri yang terluka atau tiba-tiba sakit sebelum bantuan medis/dokter datang.</p>
+        <p>Pembelajaran ini bukan untuk menjadikan kita sebagai dokter, melainkan menjadi <strong>Pahlawan Keselamatan</strong>! Di sekolah atau saat bermain, kejadian seperti mimisan, kaki terkilir, luka lecet, hingga tersedak bisa terjadi kapan saja. Dengan memahami P3K, kita bisa menolong teman dengan tenang, benar, dan tidak panik!</p>
+        <div class="cta-row"><a href="#cara-pemakaian" class="btn btn-mint btn-cta">Bagaimana Cara Belajarnya? 🤔</a></div>
+      </div>
+    </div>
+    <div class="cta-banner mt-8">
+      <h3 class="cta-title">🚀 Halo Pahlawan Cilik Nusantara!</h3>
+      <p>Penasaran bagaimana caranya menolong teman yang mimisan, luka lecet, atau terkilir tanpa panik?</p>
+      <p>Yuk, belajar P3K dengan cara yang super seru! Tonton peragaan animasi maskot pahlawan yang lucu, pelajari langkah pertolongan yang benar, dan uji ketangkasanmu lewat Quiz Pahlawan.</p>
+      <p class="cta-end">Geser ke bawah dan mulai petualangan belajarmu sekarang! ✨</p>
+    </div>
+  </div></div>
+</section>
+
+<section id="cara-pemakaian" class="sec" style="padding-bottom:1rem" aria-label="Panduan pemakaian website">
+  <div class="gutter"><div class="inner">
+    <div class="howto-grid">
+      <div id="guideArt" class="howto-art" role="img" aria-label="Nusa dan Tara, dua pahlawan cilik, mengajak mengikuti tiga langkah belajar"></div>
+      <div class="guide" role="group" aria-labelledby="guideTitle">
+        <h3 id="guideTitle" class="guide-head">Cara Menggunakan Web Ini:</h3>
+        <ol class="guide-steps">
+          <li class="gstep">
+            <span class="gbadge" style="background:#CFF5DD" aria-hidden="true">📜<b class="gnum">1</b></span>
+            <div class="min-w-0"><p class="gtitle">Pilih Kategori</p><p class="gtext">Geser ke bawah dan pilih jenis luka atau kondisi darurat.</p></div>
+          </li>
+          <li class="gstep">
+            <span class="gbadge" style="background:var(--sky-soft)" aria-hidden="true">🎬<b class="gnum">2</b></span>
+            <div class="min-w-0"><p class="gtitle">Lihat Animasi</p><p class="gtext">Klik kartu untuk melihat peragaan animasi maskot &amp; langkah pertolongan.</p></div>
+          </li>
+          <li class="gstep">
+            <span class="gbadge" style="background:var(--sun-soft)" aria-hidden="true">🏆<b class="gnum">3</b></span>
+            <div class="min-w-0"><p class="gtitle">Uji Kemampuan</p><p class="gtext">Kerjakan Quiz Pahlawan untuk menguji pemahamanmu!</p></div>
+          </li>
+        </ol>
+      </div>
+    </div>
+    <div class="cta-center"><a href="#kategori-materi" class="btn btn-sun btn-cta btn-xl">Lihat Kartu Materi P3K ✨</a></div>
+  </div></div>
+</section>
+<section id="kategori-materi" class="sec">
+  <div class="gutter"><div class="inner">
+    <h2 class="font-bold" style="font-size:clamp(2rem,5vw,3rem)">Kategori P3K</h2>
+    <p class="mt-2 text-inks font-semibold max-w-2xl">Pilih satu kartu, lalu tonton Nusa dan Tara memeragakan langkahnya. Kamu bisa menjeda, mengulang, atau menggeser langkahnya sendiri.</p>
+
+    <div class="mt-8"><div id="jurusArt" class="howto-art" role="img" aria-label="Nusa dan Tara menunjuk ke bawah: Eits, sebelum lanjut kenali 3 jurus ini dulu ya"></div></div>
+    <div class="jurus p-5 md:p-7" style="position:relative;z-index:1">
+      <h2 class="text-2xl md:text-3xl font-bold">Tiga Jurus Pahlawan</h2>
+      <ol class="mt-4 grid md:grid-cols-3 gap-4 list-none p-0">
+        <li class="flex gap-3 items-start"><span class="jurus-n" style="background:var(--sun)">1</span><span><strong>Tenang.</strong> Tarik napas, lihat sekelilingmu. Pastikan tempatnya aman.</span></li>
+        <li class="flex gap-3 items-start"><span class="jurus-n" style="background:var(--sky-soft)">2</span><span><strong>Panggil bantuan.</strong> Segera beri tahu guru atau orang dewasa terdekat.</span></li>
+        <li class="flex gap-3 items-start"><span class="jurus-n" style="background:#CFF5DD">3</span><span><strong>Tolong sesuai langkah.</strong> Lakukan P3K seperti yang kamu pelajari di sini.</span></li>
+      </ol>
+    </div>
+
+    <div class="mt-12">
+      <span class="cat-tag" style="background:#CFF5DD">Kategori 1 · Pendarahan &amp; Luka</span>
+      <div id="grid1" class="mt-5 grid gap-6 sm:grid-cols-2 lg:grid-cols-3"></div>
+    </div>
+    <div class="mt-14">
+      <span class="cat-tag" style="background:var(--sky-soft)">Kategori 2 · Kondisi Khusus &amp; Darurat</span>
+      <div id="grid2" class="mt-5 grid gap-6 sm:grid-cols-2 lg:grid-cols-4"></div>
+    </div>
+    <div class="mt-14">
+      <span class="cat-tag" style="background:var(--sun-soft)">Kategori 3 · Trauma &amp; Otot</span>
+      <div id="grid3" class="mt-5 grid gap-6 sm:grid-cols-2 lg:grid-cols-4"></div>
+    </div>
+  </div></div>
+</section>
+
+<section id="quiz" class="sec" style="background:var(--sun-soft)">
+  <div class="gutter"><div class="inner">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="font-bold text-center" style="font-size:clamp(2rem,5vw,3rem)">Quiz Pahlawan</h2>
+      <p class="mt-2 mb-8 text-center text-inks font-semibold">12 pertanyaan singkat dengan urutan acak. Jawab dengan benar untuk meraih lencana pahlawanmu!</p>
+      <div id="quiz-root" class="qwrap"></div>
+    </div>
+  </div></div>
+</section>
+
+<section id="tentang" class="sec">
+  <div class="gutter"><div class="inner">
+    <h2 class="font-bold" style="font-size:clamp(2rem,5vw,3rem)">Tentang Kami</h2>
+    <div class="mt-8 grid gap-4 max-w-3xl">
+      <p>Nusantara Kids Health Heroes adalah media pembelajaran digital Pertolongan Pertama pada Kecelakaan (P3K) untuk siswa Sekolah Dasar. Setiap materi dibuat singkat, bergambar, dan bisa diputar langkah demi langkah agar mudah diingat.</p>
+      <p>Media ini hasil kolaborasi lintas program studi Keperawatan dan PGSD, sehingga isi kesehatannya dan cara mengajarnya disusun bersama.</p>
+      <div class="note warn"><strong>Catatan keselamatan.</strong> Media ini untuk belajar dan latihan. Pada keadaan darurat yang nyata, segera panggil guru atau orang dewasa, dan hubungi layanan darurat 112 bila keadaan berat atau tidak membaik.</div>
+      <div class="note"><strong>Untuk guru dan orang tua.</strong> Putar satu kartu bersama anak, minta mereka menirukan langkahnya dengan boneka atau teman, lalu lanjutkan dengan Quiz Pahlawan.</div>
+    </div>
+  </div></div>
+</section>
+</main>
+
+<footer>
+  <div class="gutter"><div class="inner py-8 grid gap-2 text-center md:text-left md:flex md:justify-between md:items-center">
+    <div><p class="disp text-lg font-semibold" style="color:#fff">Nusantara Kids Health Heroes</p>
+    <p class="text-[.95rem] font-bold" style="color:var(--sun)">Universitas Muhammadiyah Lamongan</p></div>
+    <p class="text-[.95rem]" style="color:#CFE3F2">Media pembelajaran hasil kolaborasi Lintas Prodi Keperawatan &amp; PGSD.</p>
+  </div></div>
+</footer>
+
+<div id="modal" class="modal" hidden>
+  <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="mTitle">
+    <div class="m-head" id="mHead">
+      <div class="min-w-0">
+        <span id="mCat" class="chip" style="background:#fff"></span>
+        <h2 id="mTitle" class="text-2xl md:text-3xl font-bold mt-1"></h2>
+      </div>
+      <button id="mClose" class="ctrl" aria-label="Tutup peragaan"><svg viewBox="0 0 24 24" fill="none" stroke="#16324A" stroke-width="3.4" stroke-linecap="round"><path d="M5 5l14 14M19 5L5 19"/></svg></button>
+    </div>
+    <div class="m-grid">
+      <div id="stage" class="stage" role="img" aria-live="off"></div>
+      <div class="m-side">
+        <div class="flex gap-3 items-start">
+          <div id="mWho" class="who"></div>
+          <div class="bubble min-w-0" id="mSay"></div>
+        </div>
+        <div>
+          <p class="text-sm font-extrabold text-skyd" id="mStepNo" aria-live="polite"></p>
+          <h3 id="mStepTitle" class="text-2xl font-bold"></h3>
+          <p id="mStepText" class="mt-1 text-[1.03rem]"></p>
+        </div>
+        <div id="mNote" class="note" hidden></div>
+        <div id="mDD" class="dd" hidden></div>
+        <div class="flex items-center gap-3">
+          <button id="bPrev" class="ctrl" aria-label="Langkah sebelumnya"><svg viewBox="0 0 24 24" fill="#16324A"><path d="M15 4v16L5 12z"/></svg></button>
+          <button id="bPlay" class="ctrl big" aria-label="Jeda"></button>
+          <button id="bNext" class="ctrl" aria-label="Langkah berikutnya"><svg viewBox="0 0 24 24" fill="#16324A"><path d="M9 4v16l10-8z"/></svg></button>
+          <div class="bar flex-1" aria-hidden="true"><i id="bFill"></i></div>
+        </div>
+        <div>
+          <label for="mRange" class="text-sm font-extrabold">Geser langkah</label>
+          <input id="mRange" type="range" min="1" max="4" step="1" value="1">
+          <div id="mDots" class="dots mt-1"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>
